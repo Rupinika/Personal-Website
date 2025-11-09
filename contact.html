@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rupinika Golla for collaborations, opportunities, or to connect.">
+    <title>Contact | Rupinika Golla</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rupinika Golla</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="music.html" class="nav-link">Music</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><button class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Me</h1>
+                <p class="page-subtitle">Let's connect and collaborate</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-intro">
+                        <h2>Get In Touch</h2>
+                        <p>
+                            Feel free to reach out for collaborations, opportunities, or just to say hi! 
+                            I'm always interested in connecting with like-minded individuals, exploring 
+                            new projects, and learning from others.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h3>Send a Message</h3>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                            <div id="formMessage" class="form-message"></div>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <h4>Email</h4>
+                                <p><a href="mailto:contact@rupinikagolla.com">contact@rupinikagolla.com</a></p>
+                            </div>
+                            <div class="info-item">
+                                <h4>School</h4>
+                                <p>Milford High School<br>Massachusetts</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Connect With Me</h4>
+                                <div class="social-links-contact">
+                                    <a href="#" class="social-link-contact" aria-label="LinkedIn">LinkedIn</a>
+                                    <a href="#" class="social-link-contact" aria-label="GitHub">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>What I'm Interested In</h3>
+                        <ul class="interests-list">
+                            <li>Collaboration on tech and programming projects</li>
+                            <li>Leadership and entrepreneurship opportunities</li>
+                            <li>Academic and research opportunities</li>
+                            <li>Mentorship and learning from experienced professionals</li>
+                            <li>Connecting with fellow students and innovators</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Rupinika Golla. All rights reserved.</p>
+            <p>Milford High School, Massachusetts</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
