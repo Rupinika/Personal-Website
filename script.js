@@ -208,31 +208,21 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Mouse move parallax effect for cards
+// Subtle hover effect for cards (business casual - no 3D)
 document.querySelectorAll('.link-card, .project-card, .course-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const rotateX = (y - centerY) / 10;
-        const rotateY = (centerX - x) / 10;
-        
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    card.addEventListener('mouseenter', () => {
+        card.style.transition = 'all 0.3s ease';
     });
 });
 
-// Floating animation for icons
+// Subtle icon animation (business casual)
 document.querySelectorAll('.project-icon, .instrument-icon').forEach(icon => {
     icon.addEventListener('mouseenter', () => {
-        icon.style.animation = 'bounce 0.6s ease-in-out';
+        icon.style.transition = 'transform 0.3s ease';
+        icon.style.transform = 'scale(1.1)';
+    });
+    icon.addEventListener('mouseleave', () => {
+        icon.style.transform = 'scale(1)';
     });
 });
 
@@ -361,10 +351,10 @@ scrollProgress.style.cssText = `
     left: 0;
     width: 0%;
     height: 4px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d8659 0%, #4a7c59 100%);
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.5);
+    box-shadow: 0 2px 10px rgba(45, 134, 89, 0.4);
 `;
 document.body.appendChild(scrollProgress);
 
@@ -407,47 +397,27 @@ document.querySelectorAll('.social-link, .social-link-contact').forEach(link => 
     });
 });
 
-// Add particle effect on hero section (lightweight)
-function createParticles() {
-    const hero = document.querySelector('.hero');
-    if (!hero) return;
-    
-    for (let i = 0; i < 20; i++) {
-        const particle = document.createElement('div');
-        particle.style.cssText = `
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(102, 126, 234, 0.3);
-            border-radius: 50%;
-            pointer-events: none;
-            animation: float-particle ${3 + Math.random() * 4}s ease-in-out infinite;
-            left: ${Math.random() * 100}%;
-            top: ${Math.random() * 100}%;
-            animation-delay: ${Math.random() * 2}s;
-        `;
-        hero.appendChild(particle);
-    }
-    
-    const particleStyle = document.createElement('style');
-    particleStyle.textContent = `
-        @keyframes float-particle {
-            0%, 100% {
-                transform: translateY(0) translateX(0);
-                opacity: 0;
-            }
-            50% {
-                transform: translateY(-20px) translateX(10px);
-                opacity: 1;
-            }
-        }
-    `;
-    document.head.appendChild(particleStyle);
+// Subtle plant animation (business casual)
+function animatePlants() {
+    const plants = document.querySelectorAll('.plant-bg-left, .plant-bg-right');
+    plants.forEach(plant => {
+        plant.style.transition = 'transform 20s ease-in-out';
+        setInterval(() => {
+            plant.style.transform = plant.classList.contains('plant-bg-right') 
+                ? 'scaleX(-1) translateY(-5px)' 
+                : 'translateY(-5px)';
+            setTimeout(() => {
+                plant.style.transform = plant.classList.contains('plant-bg-right') 
+                    ? 'scaleX(-1) translateY(0)' 
+                    : 'translateY(0)';
+            }, 10000);
+        }, 20000);
+    });
 }
 
-// Initialize particles on load
-if (document.querySelector('.hero')) {
-    createParticles();
+// Initialize plant animations on load
+if (document.querySelector('.plant-bg-left')) {
+    animatePlants();
 }
 
 // Add smooth page transitions
