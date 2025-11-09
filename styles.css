@@ -1,50 +1,59 @@
-/* Modern CSS Variables with Green Color Palette */
+/* Refined Color Palette - Soft Greens & Neutral Tones */
 :root {
-    /* Green Gradient Colors - Business Casual */
-    --primary-gradient: linear-gradient(135deg, #2d8659 0%, #1e5d3f 100%);
-    --secondary-gradient: linear-gradient(135deg, #4a7c59 0%, #2d8659 100%);
-    --accent-gradient: linear-gradient(135deg, #6bcf7f 0%, #4a7c59 100%);
-    --light-gradient: linear-gradient(135deg, #a8d5ba 0%, #6bcf7f 100%);
-    --dark-gradient: linear-gradient(135deg, #1e5d3f 0%, #0f3d26 100%);
+    /* Soft Green Palette */
+    --sage-green: #9caf88;
+    --forest-green: #5a7d5a;
+    --mint-sage: #b8c9a8;
+    --soft-sage: #d4dcc4;
+    --pale-sage: #e8ede3;
     
-    /* Solid Colors - Professional Greens */
-    --primary-color: #2d8659;
-    --primary-dark: #1e5d3f;
-    --primary-light: #4a7c59;
-    --secondary-color: #6bcf7f;
-    --accent-color: #a8d5ba;
-    --dark-green: #0f3d26;
-    --medium-green: #2d8659;
-    --light-green: #a8d5ba;
-    --mint-green: #d4edda;
+    /* Neutral Tones */
+    --ivory: #faf9f6;
+    --warm-white: #fefdfb;
+    --soft-beige: #f5f3f0;
+    --warm-gray: #e8e6e3;
+    --charcoal: #3a3a3a;
+    --soft-charcoal: #5a5a5a;
     
-    /* Neutral Colors for Business Casual */
-    --text-primary: #1a1a1a;
-    --text-secondary: #4a4a4a;
-    --text-light: #ffffff;
-    --text-muted: #6c757d;
+    /* Accent Colors - Gold & Bronze */
+    --muted-gold: #c9a961;
+    --soft-bronze: #b8956a;
+    --gold-highlight: #d4b977;
+    --bronze-accent: #a6875a;
+    
+    /* Gradients - Elegant & Subtle */
+    --sage-gradient: linear-gradient(135deg, #d4dcc4 0%, #b8c9a8 100%);
+    --forest-gradient: linear-gradient(135deg, #5a7d5a 0%, #4a6a4a 100%);
+    --gold-gradient: linear-gradient(135deg, #d4b977 0%, #c9a961 100%);
+    --ivory-gradient: linear-gradient(180deg, #faf9f6 0%, #f5f3f0 100%);
+    
+    /* Text Colors */
+    --text-primary: #2a2a2a;
+    --text-secondary: #5a5a5a;
+    --text-muted: #8a8a8a;
+    --text-light: #faf9f6;
     
     /* Background Colors */
-    --bg-primary: #f8f9fa;
-    --bg-secondary: #ffffff;
-    --bg-card: rgba(255, 255, 255, 0.95);
-    --bg-glass: rgba(255, 255, 255, 0.85);
-    --bg-accent: #f0f7f4;
+    --bg-primary: #faf9f6;
+    --bg-secondary: #fefdfb;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-glass: rgba(250, 249, 246, 0.85);
+    --bg-accent: #f5f3f0;
     
-    /* Shadows & Effects - Subtle and Professional */
-    --shadow-sm: 0 2px 8px rgba(45, 134, 89, 0.08);
-    --shadow-md: 0 4px 16px rgba(45, 134, 89, 0.12);
-    --shadow-lg: 0 8px 32px rgba(45, 134, 89, 0.16);
-    --shadow-hover: 0 12px 40px rgba(45, 134, 89, 0.2);
+    /* Shadows - Soft & Elegant */
+    --shadow-sm: 0 2px 8px rgba(90, 125, 90, 0.06);
+    --shadow-md: 0 4px 16px rgba(90, 125, 90, 0.08);
+    --shadow-lg: 0 8px 32px rgba(90, 125, 90, 0.12);
+    --shadow-hover: 0 12px 40px rgba(90, 125, 90, 0.15);
     
-    /* Border Radius - Professional but friendly */
+    /* Border Radius - Refined */
     --radius-sm: 6px;
-    --radius-md: 12px;
+    --radius-md: 10px;
     --radius-lg: 16px;
     --radius-xl: 20px;
     --radius-full: 9999px;
     
-    /* Transitions - Smooth and professional */
+    /* Transitions - Smooth & Elegant */
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,24 +61,22 @@
 
 /* Dark Mode Variables */
 [data-theme="dark"] {
-    --primary-gradient: linear-gradient(135deg, #4a7c59 0%, #2d8659 100%);
-    --secondary-gradient: linear-gradient(135deg, #6bcf7f 0%, #4a7c59 100%);
+    --sage-green: #7a9a6a;
+    --forest-green: #4a6a4a;
     
-    --text-primary: #f8f9fa;
-    --text-secondary: #c8d5ce;
-    --text-light: #ffffff;
-    --text-muted: #adb5bd;
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #242424;
+    --bg-card: rgba(36, 36, 36, 0.95);
+    --bg-glass: rgba(26, 26, 26, 0.9);
+    --bg-accent: #2a2a2a;
     
-    --bg-primary: #0d1f15;
-    --bg-secondary: #15201a;
-    --bg-card: rgba(21, 32, 26, 0.9);
-    --bg-glass: rgba(21, 32, 26, 0.8);
-    --bg-accent: #1a2e22;
+    --text-primary: #e8e6e3;
+    --text-secondary: #c8c6c3;
+    --text-muted: #a8a6a3;
     
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-hover: 0 12px 40px rgba(45, 134, 89, 0.3);
+    --ivory: #2a2a2a;
+    --warm-white: #1a1a1a;
+    --soft-beige: #242424;
 }
 
 /* Reset and Base Styles */
@@ -85,16 +92,17 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Lora', 'Inter', Georgia, serif;
     color: var(--text-primary);
     background: var(--bg-primary);
-    line-height: 1.7;
+    line-height: 1.8;
     transition: var(--transition-base);
     overflow-x: hidden;
     position: relative;
+    font-size: 1.05rem;
 }
 
-/* Plant Background Elements */
+/* Subtle Botanical Background */
 body::before {
     content: '';
     position: fixed;
@@ -103,41 +111,16 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"><path d="M50 250 Q30 200 50 150 Q70 100 50 50 Q40 30 50 10" stroke="%23a8d5ba" stroke-width="2" fill="none" opacity="0.3"/><ellipse cx="50" cy="50" rx="15" ry="25" fill="%234a7c59" opacity="0.2"/><path d="M150 280 Q170 230 150 180 Q130 130 150 80 Q160 60 150 40" stroke="%23a8d5ba" stroke-width="2" fill="none" opacity="0.3"/><ellipse cx="150" cy="80" rx="15" ry="25" fill="%234a7c59" opacity="0.2"/></svg>') no-repeat,
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"><path d="M30 280 Q20 230 30 180 Q40 130 30 80 Q25 60 30 40" stroke="%236bcf7f" stroke-width="1.5" fill="none" opacity="0.25"/><ellipse cx="30" cy="80" rx="12" ry="20" fill="%232d8659" opacity="0.15"/></svg>') no-repeat 80% 20%;
-    background-size: 300px 400px, 200px 300px;
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><path d="M200 550 Q180 500 200 450 Q220 400 200 350 Q190 300 200 250 Q210 200 200 150 Q195 100 200 50" stroke="%23b8c9a8" stroke-width="1.5" fill="none" opacity="0.15"/><path d="M200 550 Q220 500 200 450 Q180 400 200 350 Q210 300 200 250 Q190 200 200 150 Q205 100 200 50" stroke="%23b8c9a8" stroke-width="1.5" fill="none" opacity="0.15"/><ellipse cx="200" cy="150" rx="25" ry="40" fill="%239caf88" opacity="0.08"/><ellipse cx="200" cy="200" rx="20" ry="35" fill="%23b8c9a8" opacity="0.06"/></svg>') no-repeat 10% 20%,
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500"><path d="M150 450 Q130 400 150 350 Q170 300 150 250 Q140 200 150 150 Q155 100 150 50" stroke="%239caf88" stroke-width="1" fill="none" opacity="0.12"/><ellipse cx="150" cy="150" rx="18" ry="30" fill="%23d4dcc4" opacity="0.05"/></svg>') no-repeat 85% 60%;
+    background-size: 350px 500px, 250px 400px;
     z-index: -1;
     opacity: 0.4;
     pointer-events: none;
 }
 
 [data-theme="dark"] body::before {
-    opacity: 0.2;
-}
-
-/* Plant decoration elements */
-.plant-decoration {
-    position: fixed;
-    width: 200px;
-    height: 300px;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.3;
-}
-
-.plant-left {
-    left: -50px;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 250"><path d="M75 250 Q60 200 75 150 Q90 100 75 50 Q70 30 75 10" stroke="%234a7c59" stroke-width="3" fill="none"/><path d="M75 250 Q90 200 75 150 Q60 100 75 50 Q80 30 75 10" stroke="%234a7c59" stroke-width="3" fill="none"/><ellipse cx="75" cy="50" rx="20" ry="35" fill="%232d8659" opacity="0.6"/><ellipse cx="75" cy="80" rx="18" ry="30" fill="%234a7c59" opacity="0.5"/><ellipse cx="75" cy="110" rx="15" ry="25" fill="%236bcf7f" opacity="0.4"/><circle cx="70" cy="45" r="3" fill="%231e5d3f"/><circle cx="80" cy="45" r="3" fill="%231e5d3f"/></svg>') no-repeat bottom;
-    background-size: contain;
-}
-
-.plant-right {
-    right: -50px;
-    top: 20%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 250"><path d="M75 250 Q60 200 75 150 Q90 100 75 50 Q70 30 75 10" stroke="%236bcf7f" stroke-width="2.5" fill="none"/><path d="M75 250 Q90 200 75 150 Q60 100 75 50 Q80 30 75 10" stroke="%236bcf7f" stroke-width="2.5" fill="none"/><ellipse cx="75" cy="60" rx="18" ry="32" fill="%234a7c59" opacity="0.5"/><ellipse cx="75" cy="90" rx="16" ry="28" fill="%236bcf7f" opacity="0.4"/></svg>') no-repeat bottom;
-    background-size: contain;
-    transform: scaleX(-1);
+    opacity: 0.15;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,23 +129,22 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
     margin-bottom: 1rem;
     line-height: 1.3;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     color: var(--text-secondary);
-    font-size: 1.05rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--forest-green);
     transition: var(--transition-fast);
 }
 
 a:hover {
-    color: var(--primary-dark);
+    color: var(--sage-green);
 }
 
 .container {
@@ -171,7 +153,7 @@ a:hover {
     padding: 0 2rem;
 }
 
-/* Professional Navigation */
+/* Elegant Navigation */
 .navbar {
     background: var(--bg-glass);
     backdrop-filter: blur(20px) saturate(180%);
@@ -181,7 +163,7 @@ a:hover {
     top: 0;
     z-index: 1000;
     transition: var(--transition-base);
-    border-bottom: 1px solid rgba(45, 134, 89, 0.1);
+    border-bottom: 1px solid rgba(156, 175, 136, 0.15);
 }
 
 .nav-container {
@@ -197,13 +179,13 @@ a:hover {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--forest-green);
     transition: var(--transition-fast);
     letter-spacing: -0.01em;
 }
 
 .nav-logo a:hover {
-    color: var(--primary-dark);
+    color: var(--sage-green);
 }
 
 .nav-menu {
@@ -230,7 +212,7 @@ a:hover {
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--primary-color);
+    background: var(--sage-gradient);
     transform: translateX(-50%);
     transition: var(--transition-base);
     border-radius: var(--radius-full);
@@ -243,13 +225,13 @@ a:hover {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--primary-color);
-    background: rgba(45, 134, 89, 0.08);
+    color: var(--forest-green);
+    background: rgba(156, 175, 136, 0.1);
 }
 
 .theme-toggle {
     background: var(--bg-glass);
-    border: 1.5px solid rgba(45, 134, 89, 0.2);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     font-size: 1.1rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -263,10 +245,10 @@ a:hover {
 }
 
 .theme-toggle:hover {
-    transform: scale(1.1);
-    background: var(--primary-color);
+    transform: scale(1.05);
+    background: var(--sage-green);
     color: white;
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
 }
 
 .nav-toggle {
@@ -282,41 +264,52 @@ a:hover {
 .nav-toggle span {
     width: 24px;
     height: 2.5px;
-    background: var(--primary-color);
+    background: var(--forest-green);
     border-radius: var(--radius-full);
     transition: var(--transition-base);
 }
 
-/* Business Casual Hero Section */
+/* Elegant Hero Section with Plant Shadow */
 .hero {
-    padding: 5rem 0 6rem;
-    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-accent) 100%);
+    padding: 6rem 0 7rem;
+    background: var(--ivory-gradient);
     position: relative;
     overflow: hidden;
 }
 
+/* Blurred Plant Photography Effect */
 .hero::before {
     content: '';
     position: absolute;
     top: -10%;
-    right: -5%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(45, 134, 89, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(60px);
+    right: -8%;
+    width: 600px;
+    height: 600px;
+    background: 
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><path d="M200 550 Q180 500 200 450 Q220 400 200 350 Q190 300 200 250 Q210 200 200 150 Q195 100 200 50" stroke="%239caf88" stroke-width="8" fill="none" opacity="0.3"/><path d="M200 550 Q220 500 200 450 Q180 400 200 350 Q210 300 200 250 Q190 200 200 150 Q205 100 200 50" stroke="%239caf88" stroke-width="8" fill="none" opacity="0.3"/><ellipse cx="200" cy="150" rx="60" ry="100" fill="%23b8c9a8" opacity="0.25"/><ellipse cx="200" cy="220" rx="50" ry="85" fill="%23d4dcc4" opacity="0.2"/><ellipse cx="200" cy="290" rx="40" ry="70" fill="%239caf88" opacity="0.15"/></svg>') no-repeat;
+    background-size: contain;
+    filter: blur(40px);
+    opacity: 0.4;
+    z-index: 0;
+    animation: floatPlant 20s ease-in-out infinite;
+}
+
+@keyframes floatPlant {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-20px, -20px) rotate(2deg); }
 }
 
 .hero::after {
     content: '';
     position: absolute;
-    bottom: -10%;
+    bottom: -5%;
     left: -5%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(107, 207, 127, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(184, 201, 168, 0.15) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(50px);
+    z-index: 0;
 }
 
 .hero-container {
@@ -325,14 +318,14 @@ a:hover {
     padding: 0 2rem;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 4rem;
+    gap: 5rem;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
 .hero-content {
-    animation: fadeInUp 0.8s ease-out;
+    animation: fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -347,8 +340,8 @@ a:hover {
 }
 
 .hero-title {
-    font-size: 3rem;
-    margin-bottom: 1.25rem;
+    font-size: 3.25rem;
+    margin-bottom: 1.5rem;
     line-height: 1.2;
     color: var(--text-primary);
     font-weight: 700;
@@ -357,48 +350,49 @@ a:hover {
 .highlight {
     display: inline-block;
     position: relative;
-    color: var(--primary-color);
+    color: var(--forest-green);
 }
 
 .highlight::after {
     content: '';
     position: absolute;
-    bottom: 8px;
+    bottom: 10px;
     left: 0;
     width: 100%;
-    height: 12px;
-    background: rgba(45, 134, 89, 0.2);
+    height: 10px;
+    background: rgba(156, 175, 136, 0.25);
     z-index: -1;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-primary);
-    margin-bottom: 1.25rem;
-    animation: fadeInUp 0.8s ease-out 0.2s both;
-    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-out 0.2s both;
+    line-height: 1.5;
+    font-style: italic;
 }
 
 .hero-description {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
-    line-height: 1.8;
-    animation: fadeInUp 0.8s ease-out 0.4s both;
+    margin-bottom: 2.5rem;
+    line-height: 1.9;
+    animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     flex-wrap: wrap;
-    animation: fadeInUp 0.8s ease-out 0.6s both;
+    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .btn {
-    padding: 0.875rem 2rem;
+    padding: 0.875rem 2.25rem;
     border-radius: var(--radius-md);
     font-weight: 600;
     transition: var(--transition-base);
@@ -411,6 +405,7 @@ a:hover {
     position: relative;
     overflow: hidden;
     letter-spacing: 0.01em;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn span:last-child {
@@ -423,34 +418,46 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background: var(--forest-gradient);
     color: white;
     box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-    background: var(--primary-dark);
+    background: var(--sage-green);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: var(--forest-green);
+    border: 2px solid var(--forest-green);
 }
 
 .btn-secondary:hover {
-    background: var(--primary-color);
+    background: var(--forest-green);
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
+.btn-gold {
+    background: var(--gold-gradient);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-gold:hover {
+    background: var(--muted-gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
-    animation: fadeInUp 0.8s ease-out 0.8s both;
+    animation: fadeInUp 1s ease-out 0.8s both;
 }
 
 .social-link {
@@ -459,17 +466,17 @@ a:hover {
     border-radius: var(--radius-md);
     color: var(--text-primary);
     font-weight: 500;
-    border: 1.5px solid rgba(45, 134, 89, 0.2);
+    border: 1.5px solid rgba(156, 175, 136, 0.3);
     transition: var(--transition-base);
     font-size: 0.9rem;
 }
 
 .social-link:hover {
-    background: var(--primary-color);
+    background: var(--sage-green);
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
 }
 
 .hero-image {
@@ -477,7 +484,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: fadeInRight 0.8s ease-out 0.4s both;
+    animation: fadeInRight 1s ease-out 0.4s both;
 }
 
 @keyframes fadeInRight {
@@ -495,7 +502,7 @@ a:hover {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    background: var(--sage-gradient);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -505,7 +512,7 @@ a:hover {
     text-align: center;
     padding: 2rem;
     position: relative;
-    border: 4px solid var(--bg-secondary);
+    border: 5px solid var(--bg-secondary);
 }
 
 .photo-placeholder svg {
@@ -517,17 +524,17 @@ a:hover {
 
 .photo-placeholder p {
     margin-top: 1rem;
-    color: white;
+    color: var(--forest-green);
     font-weight: 500;
     z-index: 1;
     position: relative;
     font-size: 0.95rem;
 }
 
-/* Professional Page Header */
+/* Elegant Page Header */
 .page-header {
-    padding: 4rem 0;
-    background: var(--primary-gradient);
+    padding: 5rem 0;
+    background: var(--forest-gradient);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -541,13 +548,13 @@ a:hover {
     width: 100%;
     height: 100%;
     background: 
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 80 Q40 60 50 40 Q60 20 50 0" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/><ellipse cx="50" cy="40" rx="8" ry="15" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M100 180 Q80 140 100 100 Q120 60 100 20" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/><ellipse cx="100" cy="100" rx="15" ry="25" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
     opacity: 0.3;
 }
 
 .page-title {
-    font-size: 2.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
     color: white;
     position: relative;
     z-index: 1;
@@ -555,16 +562,17 @@ a:hover {
 }
 
 .page-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.95);
     position: relative;
     z-index: 1;
     font-weight: 400;
+    font-style: italic;
 }
 
-/* Content Sections */
+/* Content Sections with Leaf Decoration */
 .content-section {
-    padding: 4rem 0;
+    padding: 5rem 0;
     position: relative;
     background: var(--bg-primary);
 }
@@ -580,58 +588,75 @@ a:hover {
 }
 
 .content-section h2 {
-    font-size: 2.25rem;
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
     position: relative;
     display: inline-block;
     font-weight: 700;
+    padding-bottom: 1rem;
 }
 
 .content-section h2:first-child {
     margin-top: 0;
 }
 
+/* Leaf Icon Under Section Titles */
 .content-section h2::after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
-    width: 50px;
-    height: 3px;
-    background: var(--primary-color);
-    border-radius: var(--radius-full);
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5 4 8 7 12 3-4 7-7 7-12 0-4-3-7-7-7z" fill="%239caf88" opacity="0.6"/></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0.6;
 }
 
-/* Quick Links - Professional Cards */
+/* Quick Links - Elegant Cards */
 .quick-links {
-    padding: 4rem 0;
+    padding: 5rem 0;
     background: var(--bg-secondary);
     position: relative;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.75rem;
+    margin-bottom: 4rem;
     color: var(--text-primary);
     font-weight: 700;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8 2 5 5 5 9c0 5 4 8 7 12 3-4 7-7 7-12 0-4-3-7-7-7z" fill="%239caf88" opacity="0.5"/></svg>') no-repeat center;
+    background-size: contain;
 }
 
 .links-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .link-card {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: var(--transition-base);
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -641,9 +666,9 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
+    width: 3px;
     height: 0;
-    background: var(--primary-color);
+    background: var(--sage-gradient);
     transition: var(--transition-base);
 }
 
@@ -654,13 +679,14 @@ a:hover {
 .link-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
+    background: var(--warm-white);
 }
 
 .link-card h3 {
-    color: var(--primary-color);
+    color: var(--forest-green);
     margin-bottom: 0.75rem;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     position: relative;
     z-index: 1;
 }
@@ -669,10 +695,11 @@ a:hover {
     color: var(--text-secondary);
     position: relative;
     z-index: 1;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
-/* Professional Cards */
+/* Elegant Cards */
 .courses-grid,
 .leadership-grid,
 .projects-grid,
@@ -680,9 +707,9 @@ a:hover {
 .interests-grid,
 .philosophy-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
 }
 
 .course-card,
@@ -692,11 +719,11 @@ a:hover {
 .interest-card,
 .philosophy-item {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: var(--transition-base);
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     position: relative;
 }
 
@@ -711,8 +738,8 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: var(--primary-color);
+    height: 2px;
+    background: var(--sage-gradient);
     transform: scaleX(0);
     transform-origin: left;
     transition: var(--transition-base);
@@ -735,25 +762,27 @@ a:hover {
 .philosophy-item:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
+    background: var(--warm-white);
 }
 
 .project-icon,
 .instrument-icon {
     font-size: 3rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     display: inline-block;
+    opacity: 0.8;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
 }
 
 .tag {
-    background: var(--primary-color);
+    background: var(--sage-green);
     color: white;
     padding: 0.4rem 0.875rem;
     border-radius: var(--radius-md);
@@ -764,11 +793,11 @@ a:hover {
 }
 
 .tag:hover {
-    background: var(--primary-dark);
+    background: var(--forest-green);
     transform: translateY(-2px);
 }
 
-/* Lists */
+/* Lists with Elegant Checkmarks */
 .goals-list,
 .deca-list,
 .philosophy-list,
@@ -783,12 +812,12 @@ a:hover {
 .philosophy-list li,
 .music-impact-list li,
 .interests-list li {
-    padding: 0.875rem 0;
-    padding-left: 2.25rem;
+    padding: 1rem 0;
+    padding-left: 2.5rem;
     position: relative;
     color: var(--text-secondary);
     transition: var(--transition-fast);
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .goals-list li::before,
@@ -802,9 +831,9 @@ a:hover {
     color: white;
     font-weight: bold;
     font-size: 0.875rem;
-    width: 22px;
-    height: 22px;
-    background: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    background: var(--sage-green);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -822,7 +851,7 @@ a:hover {
 
 /* Timeline */
 .timeline-section {
-    padding: 4rem 0;
+    padding: 5rem 0;
     background: var(--bg-secondary);
     position: relative;
 }
@@ -840,16 +869,16 @@ a:hover {
     left: 50%;
     top: 0;
     bottom: 0;
-    width: 3px;
-    background: var(--primary-color);
+    width: 2px;
+    background: var(--sage-gradient);
     transform: translateX(-50%);
     border-radius: var(--radius-full);
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .timeline-item {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     position: relative;
 }
 
@@ -858,10 +887,10 @@ a:hover {
 }
 
 .timeline-marker {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: var(--sage-green);
     border: 4px solid var(--bg-secondary);
     position: absolute;
     left: 50%;
@@ -872,18 +901,19 @@ a:hover {
 
 .timeline-content {
     background: var(--bg-card);
-    padding: 1.75rem;
+    padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     width: 45%;
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     transition: var(--transition-base);
 }
 
 .timeline-content:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
+    background: var(--warm-white);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -899,78 +929,80 @@ a:hover {
 /* Music Section */
 .music-instruments {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0;
 }
 
 .instrument-card {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     text-align: center;
     transition: var(--transition-base);
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     position: relative;
 }
 
 .instrument-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
+    background: var(--warm-white);
 }
 
 .performance-placeholder {
     background: var(--bg-card);
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: var(--radius-lg);
     text-align: center;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     box-shadow: var(--shadow-sm);
-    border: 2px dashed rgba(45, 134, 89, 0.2);
+    border: 2px dashed rgba(156, 175, 136, 0.3);
     transition: var(--transition-base);
 }
 
 .performance-placeholder:hover {
-    border-color: var(--primary-color);
-    background: rgba(45, 134, 89, 0.03);
+    border-color: var(--sage-green);
+    background: rgba(156, 175, 136, 0.05);
 }
 
 .small-text {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
+    font-size: 0.9rem;
+    color: var(--text-muted);
     margin-top: 1rem;
 }
 
 .other-interests {
     display: grid;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    gap: 2rem;
+    margin: 2.5rem 0;
 }
 
 .interest-item {
     background: var(--bg-card);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
     transition: var(--transition-base);
 }
 
 .interest-item:hover {
     transform: translateX(4px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+    border-color: var(--sage-green);
+    background: var(--warm-white);
 }
 
 /* Coming Soon */
 .coming-soon-card {
-    background: var(--primary-gradient);
-    padding: 3rem;
+    background: var(--forest-gradient);
+    padding: 4rem;
     border-radius: var(--radius-lg);
     text-align: center;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     color: white;
     box-shadow: var(--shadow-md);
     position: relative;
@@ -992,33 +1024,33 @@ a:hover {
 }
 
 .coming-soon-text {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
 }
 
 /* Contact Form */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    margin: 3rem 0;
+    gap: 3rem;
+    margin: 3.5rem 0;
 }
 
 .contact-form-container,
 .contact-info {
     background: var(--bg-card);
-    padding: 2.25rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
 }
 
 .form-group {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
     color: var(--text-primary);
     font-size: 0.95rem;
@@ -1027,11 +1059,11 @@ a:hover {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.875rem;
-    border: 1.5px solid rgba(45, 134, 89, 0.2);
+    padding: 1rem;
+    border: 1.5px solid rgba(156, 175, 136, 0.3);
     border-radius: var(--radius-md);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
     background: var(--bg-secondary);
     color: var(--text-primary);
     transition: var(--transition-base);
@@ -1040,8 +1072,9 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(45, 134, 89, 0.1);
+    border-color: var(--sage-green);
+    box-shadow: 0 0 0 3px rgba(156, 175, 136, 0.1);
+    background: var(--warm-white);
 }
 
 .form-message {
@@ -1052,10 +1085,10 @@ a:hover {
 }
 
 .form-message.success {
-    background: var(--mint-green);
-    color: var(--dark-green);
+    background: var(--pale-sage);
+    color: var(--forest-green);
     display: block;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--sage-green);
 }
 
 .form-message.error {
@@ -1066,18 +1099,19 @@ a:hover {
 }
 
 .info-item {
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .info-item h4 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    color: var(--forest-green);
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
 }
 
 .info-item p {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 .social-links-contact {
@@ -1088,7 +1122,7 @@ a:hover {
 
 .social-link-contact {
     padding: 0.625rem 1.25rem;
-    background: var(--primary-color);
+    background: var(--sage-green);
     color: white;
     border-radius: var(--radius-md);
     transition: var(--transition-base);
@@ -1097,33 +1131,54 @@ a:hover {
 }
 
 .social-link-contact:hover {
-    background: var(--primary-dark);
+    background: var(--forest-green);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
 .contact-cta {
     background: var(--bg-card);
-    padding: 2.25rem;
+    padding: 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    margin-top: 3rem;
-    border: 1.5px solid rgba(45, 134, 89, 0.1);
+    margin-top: 3.5rem;
+    border: 1.5px solid rgba(156, 175, 136, 0.2);
 }
 
 /* Footer */
 footer {
-    background: var(--dark-gradient);
-    padding: 2.5rem 0;
+    background: var(--forest-gradient);
+    padding: 3rem 0;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
     color: white;
 }
 
 .footer-container p {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.9);
     margin: 0.5rem 0;
     font-size: 0.95rem;
+}
+
+/* Parallax Leaf Background */
+.parallax-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.parallax-leaf {
+    position: absolute;
+    opacity: 0.08;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 90 Q30 70 50 50 Q70 30 50 10 Q45 5 50 0" stroke="%239caf88" stroke-width="2" fill="none"/><path d="M50 90 Q70 70 50 50 Q30 30 50 10 Q55 5 50 0" stroke="%239caf88" stroke-width="2" fill="none"/><ellipse cx="50" cy="30" rx="12" ry="20" fill="%23b8c9a8" opacity="0.3"/></svg>') no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
 }
 
 /* Responsive Design */
@@ -1141,7 +1196,7 @@ footer {
         box-shadow: var(--shadow-lg);
         padding: 2rem 0;
         gap: 0.5rem;
-        border-top: 1px solid rgba(45, 134, 89, 0.1);
+        border-top: 1px solid rgba(156, 175, 136, 0.2);
     }
 
     .nav-menu.active {
@@ -1158,7 +1213,7 @@ footer {
     }
 
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {
@@ -1202,17 +1257,17 @@ footer {
     }
 
     .page-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .page-title {
@@ -1243,7 +1298,7 @@ footer {
 }
 
 .fade-in {
-    animation: fadeIn 0.6s ease-out;
+    animation: fadeIn 0.8s ease-out;
 }
 
 /* Custom Scrollbar */
@@ -1256,38 +1311,40 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--sage-green);
     border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-dark);
+    background: var(--forest-green);
 }
 
-/* Plant SVG Background Elements */
-.plant-bg-left {
-    position: fixed;
-    left: -100px;
-    bottom: 0;
-    width: 300px;
-    height: 500px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400"><path d="M100 400 Q80 350 100 300 Q120 250 100 200 Q90 150 100 100 Q110 50 100 0" stroke="%232d8659" stroke-width="4" fill="none" opacity="0.4"/><path d="M100 400 Q120 350 100 300 Q80 250 100 200 Q110 150 100 100 Q90 50 100 0" stroke="%232d8659" stroke-width="4" fill="none" opacity="0.4"/><ellipse cx="100" cy="100" rx="25" ry="40" fill="%234a7c59" opacity="0.3"/><ellipse cx="100" cy="140" rx="22" ry="35" fill="%232d8659" opacity="0.25"/><ellipse cx="100" cy="180" rx="18" ry="30" fill="%236bcf7f" opacity="0.2"/></svg>') no-repeat bottom;
-    background-size: contain;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.15;
+/* Section Dividers with Botanical Touch */
+.section-divider {
+    position: relative;
+    padding: 3rem 0;
+    text-align: center;
 }
 
-.plant-bg-right {
-    position: fixed;
-    right: -100px;
-    top: 15%;
-    width: 250px;
-    height: 450px;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400"><path d="M100 400 Q80 350 100 300 Q120 250 100 200 Q90 150 100 100 Q110 50 100 0" stroke="%234a7c59" stroke-width="3" fill="none" opacity="0.4"/><path d="M100 400 Q120 350 100 300 Q80 250 100 200 Q110 150 100 100 Q90 50 100 0" stroke="%234a7c59" stroke-width="3" fill="none" opacity="0.4"/><ellipse cx="100" cy="110" rx="20" ry="35" fill="%236bcf7f" opacity="0.25"/><ellipse cx="100" cy="150" rx="18" ry="30" fill="%234a7c59" opacity="0.2"/></svg>') no-repeat bottom;
-    background-size: contain;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.12;
-    transform: scaleX(-1);
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--sage-green), transparent);
+    opacity: 0.3;
+}
+
+.section-divider::after {
+    content: '🌿';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-primary);
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    opacity: 0.5;
 }

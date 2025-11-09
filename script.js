@@ -343,18 +343,18 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Add scroll progress indicator
+// Add scroll progress indicator with sage green
 const scrollProgress = document.createElement('div');
 scrollProgress.style.cssText = `
     position: fixed;
     top: 0;
     left: 0;
     width: 0%;
-    height: 4px;
-    background: linear-gradient(135deg, #2d8659 0%, #4a7c59 100%);
+    height: 3px;
+    background: linear-gradient(135deg, #9caf88 0%, #5a7d5a 100%);
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 2px 10px rgba(45, 134, 89, 0.4);
+    box-shadow: 0 2px 8px rgba(156, 175, 136, 0.3);
 `;
 document.body.appendChild(scrollProgress);
 
@@ -397,27 +397,99 @@ document.querySelectorAll('.social-link, .social-link-contact').forEach(link => 
     });
 });
 
-// Subtle plant animation (business casual)
-function animatePlants() {
-    const plants = document.querySelectorAll('.plant-bg-left, .plant-bg-right');
-    plants.forEach(plant => {
-        plant.style.transition = 'transform 20s ease-in-out';
-        setInterval(() => {
-            plant.style.transform = plant.classList.contains('plant-bg-right') 
-                ? 'scaleX(-1) translateY(-5px)' 
-                : 'translateY(-5px)';
-            setTimeout(() => {
-                plant.style.transform = plant.classList.contains('plant-bg-right') 
-                    ? 'scaleX(-1) translateY(0)' 
-                    : 'translateY(0)';
-            }, 10000);
-        }, 20000);
+// Parallax Leaf Background Effect - Elegant & Subtle
+function createParallaxLeaves() {
+    // Check if already created
+    if (document.querySelector('.parallax-leaves')) return;
+    
+    const parallaxContainer = document.createElement('div');
+    parallaxContainer.className = 'parallax-leaves';
+    document.body.appendChild(parallaxContainer);
+    
+    // Create multiple leaves at different positions
+    const leafPositions = [
+        { top: '8%', left: '3%', size: '100px', delay: 0 },
+        { top: '25%', left: '88%', size: '85px', delay: 1 },
+        { top: '55%', left: '5%', size: '75px', delay: 2 },
+        { top: '75%', left: '82%', size: '95px', delay: 1.5 },
+        { top: '40%', left: '48%', size: '70px', delay: 2.5 },
+    ];
+    
+    leafPositions.forEach((pos, index) => {
+        const leaf = document.createElement('div');
+        leaf.className = 'parallax-leaf';
+        leaf.dataset.index = index;
+        leaf.style.cssText = `
+            top: ${pos.top};
+            left: ${pos.left};
+            width: ${pos.size};
+            height: ${pos.size};
+        `;
+        parallaxContainer.appendChild(leaf);
+    });
+    
+    // Add CSS animation
+    if (!document.getElementById('leaf-animation-style')) {
+        const style = document.createElement('style');
+        style.id = 'leaf-animation-style';
+        style.textContent = `
+            @keyframes floatLeaf {
+                0%, 100% {
+                    transform: translate(0, 0) rotate(0deg);
+                    opacity: 0.06;
+                }
+                33% {
+                    transform: translate(8px, -12px) rotate(3deg);
+                    opacity: 0.1;
+                }
+                66% {
+                    transform: translate(-8px, -20px) rotate(-3deg);
+                    opacity: 0.08;
+                }
+            }
+            .parallax-leaf {
+                animation: floatLeaf 20s ease-in-out infinite;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    // Apply delays
+    leafPositions.forEach((pos, index) => {
+        const leaf = parallaxContainer.children[index];
+        if (leaf) {
+            leaf.style.animationDelay = `${pos.delay}s`;
+        }
     });
 }
 
-// Initialize plant animations on load
-if (document.querySelector('.plant-bg-left')) {
-    animatePlants();
+// Subtle parallax scroll effect for leaves
+let ticking = false;
+function updateParallaxLeaves() {
+    const scrolled = window.pageYOffset;
+    const leaves = document.querySelectorAll('.parallax-leaf');
+    
+    leaves.forEach((leaf, index) => {
+        const speed = 0.15 + (index * 0.03);
+        const yPos = scrolled * speed * 0.5; // Very subtle movement
+        leaf.style.transform = `translateY(${yPos}px)`;
+    });
+    
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(updateParallaxLeaves);
+        ticking = true;
+    }
+});
+
+// Initialize parallax leaves on load
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createParallaxLeaves);
+} else {
+    createParallaxLeaves();
 }
 
 // Add smooth page transitions
