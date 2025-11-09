@@ -343,7 +343,7 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Add scroll progress indicator with sage green
+// Add scroll progress indicator with deep green
 const scrollProgress = document.createElement('div');
 scrollProgress.style.cssText = `
     position: fixed;
@@ -351,10 +351,10 @@ scrollProgress.style.cssText = `
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(135deg, #9caf88 0%, #5a7d5a 100%);
+    background: linear-gradient(135deg, #4a6b3a 0%, #2d5016 100%);
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 2px 8px rgba(156, 175, 136, 0.3);
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.3);
 `;
 document.body.appendChild(scrollProgress);
 
