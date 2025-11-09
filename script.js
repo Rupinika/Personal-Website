@@ -343,7 +343,7 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Add scroll progress indicator with deep green
+// Add scroll progress indicator with gold accent
 const scrollProgress = document.createElement('div');
 scrollProgress.style.cssText = `
     position: fixed;
@@ -351,10 +351,10 @@ scrollProgress.style.cssText = `
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(135deg, #4a6b3a 0%, #2d5016 100%);
+    background: linear-gradient(135deg, #d4b977 0%, #b8956a 100%);
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.3);
+    box-shadow: 0 2px 8px rgba(212, 185, 119, 0.4);
 `;
 document.body.appendChild(scrollProgress);
 

@@ -49,52 +49,63 @@
         <section class="hero">
             <div class="hero-container">
                 <div class="hero-content">
-                    <div class="hero-image">
-                        <div class="photo-placeholder">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#4a6b3a;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#2d5016;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="100" cy="100" r="80" fill="url(#avatarGradient)" opacity="0.1"/>
-                                <circle cx="100" cy="85" r="25" fill="url(#avatarGradient)"/>
-                                <path d="M 50 160 Q 100 130 150 160" stroke="url(#avatarGradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
-                            </svg>
-                            <p>Professional Photo</p>
+                    <!-- Top Information Bar - Inspired by Image -->
+                    <div class="hero-info-bar" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 4rem; width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto; animation: fadeInUp 1.2s ease-out 0.3s both;">
+                        <div class="info-item-top">
+                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Current Grade</div>
+                            <div style="font-size: 1.1rem; font-weight: 600; color: white;">10th Grade</div>
+                        </div>
+                        <div class="info-item-top">
+                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">School</div>
+                            <div style="font-size: 1.1rem; font-weight: 600; color: white;">Milford High</div>
+                        </div>
+                        <div class="info-item-top">
+                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Location</div>
+                            <div style="font-size: 1.1rem; font-weight: 600; color: white;">Massachusetts</div>
+                        </div>
+                        <div class="info-item-top">
+                            <div style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Connect</div>
+                            <div style="font-size: 1.1rem; font-weight: 600; color: white;">Let's Talk</div>
                         </div>
                     </div>
-                    <h1 class="hero-title">Rupinika Golla</h1>
-                    <p class="hero-subtitle">10th Grade Student | Aspiring Computer Scientist | Entrepreneur</p>
-                    <p class="hero-description">
-                        I'm a passionate student at Milford High School, Massachusetts, driven by curiosity for technology, 
-                        love for leadership, and grounded values. My goal is to study computer science and make a meaningful 
-                        impact through innovation and entrepreneurship.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="about.html" class="btn btn-primary">
-                            <span>Learn More About Me</span>
-                            <span>→</span>
-                        </a>
-                        <a href="projects.html" class="btn btn-secondary">
-                            <span>View My Projects</span>
-                            <span>→</span>
-                        </a>
+                    
+                    <!-- Main Content - Left Aligned -->
+                    <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+                        <div class="hero-image" style="margin-bottom: 3rem; text-align: center;">
+                            <div class="photo-placeholder">
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#4a6b4a;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#2d4a2d;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="80" fill="url(#avatarGradient)" opacity="0.2"/>
+                                    <circle cx="100" cy="85" r="25" fill="url(#avatarGradient)"/>
+                                    <path d="M 50 160 Q 100 130 150 160" stroke="url(#avatarGradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
+                                </svg>
+                                <p>Professional Photo</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem; font-size: 0.95rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; animation: fadeInUp 1.2s ease-out 0.6s both;">Rupinika Golla</div>
+                        <h1 class="hero-title" style="text-align: left; margin-bottom: 1.5rem; animation: fadeInUp 1.2s ease-out 0.9s both;">Aspiring Computer Scientist</h1>
+                        <p class="hero-description" style="text-align: left; margin-bottom: 3rem; animation: fadeInUp 1.2s ease-out 1.2s both;">
+                            A passionate student driven by curiosity for technology, love for leadership, and grounded values. 
+                            My goal is to study computer science and make a meaningful impact through innovation and entrepreneurship.
+                        </p>
+                        
+                        <!-- CTA Button - Bottom Right -->
+                        <div style="text-align: right; animation: fadeInUp 1.2s ease-out 1.5s both;">
+                            <a href="about.html" class="btn btn-primary">
+                                <span>Explore My Journey</span>
+                                <span>→</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="scroll-down" onclick="document.querySelector('.quick-links').scrollIntoView({behavior: 'smooth'})">
+                    
+                    <div class="scroll-down" onclick="document.querySelector('.quick-links').scrollIntoView({behavior: 'smooth'})" style="margin-top: 4rem;">
                         <div class="scroll-down-icon">↓</div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Email">
-                            <span>Email</span>
-                        </a>
                     </div>
                 </div>
             </div>
